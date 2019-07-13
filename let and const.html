@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/zipodogura/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var name = "Nirav"; // normal variable
+console.log(name); // print statment 
+
+let age = 20; // variable with scope 
+if(true){
+  
+  let age = 24; // this age has limited scope in if body
+  console.log(age);
+}
+
+console.log(age);
+
+
+const AGE = 23; // this is constant variable its common to write in upper case to clearly show the constant
+console.log(AGE);
+
+const AGES = [24, 25, 26]; // this is the array of conastant values
+console.log(AGES);
+AGES.push(23);
+console.log(AGES);
+
+
+</script>
+</body>
+</html>
