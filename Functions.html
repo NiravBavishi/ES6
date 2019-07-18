@@ -18,33 +18,34 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 <script id="jsbin-javascript">
 function fn(){ // noramal function syntax
-  
+
   console.log("Hello!");
-  
+
 }
 
 fn();
 
 
-// Another syntax for function 
+// Another syntax for function
 
 var fn = () => {
-  
+
   console.log("Hello!")
-  
+
 }
 
 fn();
 
+// functions with => called fat Arrow functions
 
 var func = () => "Hello"; // here hello is simpley return Value without body part
 
 console.log(func());
 
-// function with body 
+// function with body
 
 var func = () => {
-  
+
   let a = 1;
   let b = 2;
   return a+b;
@@ -60,11 +61,11 @@ var func = (a, b) => {
 console.log(func(3, 4))
 
 // special case if function contains only one argument
-var func = a => { // if and only if the function cnotains only one argument then we can ignore parenthesize 
+var func = a => { // if and only if the function cnotains only one argument then we can ignore parenthesize
   return a+4;
 }
 
-// another way to write the function with one line of code 
+// another way to write the function with one line of code
 // var func = a => a+4
 
 
