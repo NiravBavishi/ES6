@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/zipodogura/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+function fn(){ // noramal function syntax
+  
+  console.log("Hello!");
+  
+}
+
+fn();
+
+
+// Another syntax for function 
+
+var fn = () => {
+  
+  console.log("Hello!")
+  
+}
+
+fn();
+
+
+var func = () => "Hello"; // here hello is simpley return Value without body part
+
+console.log(func());
+
+// function with body 
+
+var func = () => {
+  
+  let a = 1;
+  let b = 2;
+  return a+b;
+}
+
+console.log(func())
+
+// function with argument
+var func = (a, b) => {
+  return a+b;
+}
+
+console.log(func(3, 4))
+
+// special case if function contains only one argument
+var func = a => { // if and only if the function cnotains only one argument then we can ignore parenthesize 
+  return a+4;
+}
+
+// another way to write the function with one line of code 
+// var func = a => a+4
+
+
+console.log(func(3));
+
+// another way to user function
+
+setTimeout(() => console.log("Hello!") , 3000);
+</script>
+</body>
+</html>
